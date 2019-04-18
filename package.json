@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "watch:server": "yarn ts-node-dev -- --inspect -- ./server/src/server.ts",
+    "watch:client": "yarn workspace client webpack-dev-server -- --hot --progress"
+  },
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}
